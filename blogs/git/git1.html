@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git命令大全 🔥 | 南思blog</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/blogs/assets/css/0.styles.5cdc9847.css" as="style"><link rel="preload" href="/blogs/assets/js/app.1262c1df.js" as="script"><link rel="preload" href="/blogs/assets/js/7.06f4551e.js" as="script"><link rel="preload" href="/blogs/assets/js/2.25e16450.js" as="script"><link rel="preload" href="/blogs/assets/js/1.b934b37f.js" as="script"><link rel="preload" href="/blogs/assets/js/63.75408502.js" as="script"><link rel="prefetch" href="/blogs/assets/js/10.a3654e87.js"><link rel="prefetch" href="/blogs/assets/js/100.e1221436.js"><link rel="prefetch" href="/blogs/assets/js/101.29822f4c.js"><link rel="prefetch" href="/blogs/assets/js/102.f07c30f9.js"><link rel="prefetch" href="/blogs/assets/js/103.875dcaad.js"><link rel="prefetch" href="/blogs/assets/js/104.8868c8ae.js"><link rel="prefetch" href="/blogs/assets/js/105.b2020256.js"><link rel="prefetch" href="/blogs/assets/js/106.6bd06bcc.js"><link rel="prefetch" href="/blogs/assets/js/107.cf4efb0c.js"><link rel="prefetch" href="/blogs/assets/js/108.81e28982.js"><link rel="prefetch" href="/blogs/assets/js/109.bb25cdcf.js"><link rel="prefetch" href="/blogs/assets/js/11.1d7b1018.js"><link rel="prefetch" href="/blogs/assets/js/14.fffc2f70.js"><link rel="prefetch" href="/blogs/assets/js/15.1b322c3c.js"><link rel="prefetch" href="/blogs/assets/js/16.7091cf0f.js"><link rel="prefetch" href="/blogs/assets/js/17.a97f7e5d.js"><link rel="prefetch" href="/blogs/assets/js/18.7c39ee58.js"><link rel="prefetch" href="/blogs/assets/js/19.3d95852d.js"><link rel="prefetch" href="/blogs/assets/js/20.7a1dec95.js"><link rel="prefetch" href="/blogs/assets/js/21.0f8035f2.js"><link rel="prefetch" href="/blogs/assets/js/22.87bf876e.js"><link rel="prefetch" href="/blogs/assets/js/23.e591f852.js"><link rel="prefetch" href="/blogs/assets/js/24.c4483980.js"><link rel="prefetch" href="/blogs/assets/js/25.8048206d.js"><link rel="prefetch" href="/blogs/assets/js/26.2e61f0f0.js"><link rel="prefetch" href="/blogs/assets/js/27.6393b660.js"><link rel="prefetch" href="/blogs/assets/js/28.516dcc7b.js"><link rel="prefetch" href="/blogs/assets/js/29.d05abb64.js"><link rel="prefetch" href="/blogs/assets/js/3.1d391295.js"><link rel="prefetch" href="/blogs/assets/js/30.1394f297.js"><link rel="prefetch" href="/blogs/assets/js/31.350fe4f7.js"><link rel="prefetch" href="/blogs/assets/js/32.1db1e4ed.js"><link rel="prefetch" href="/blogs/assets/js/33.824a2f07.js"><link rel="prefetch" href="/blogs/assets/js/34.b5d534c7.js"><link rel="prefetch" href="/blogs/assets/js/35.a9499ef7.js"><link rel="prefetch" href="/blogs/assets/js/36.5752fd46.js"><link rel="prefetch" href="/blogs/assets/js/37.eaf73d9d.js"><link rel="prefetch" href="/blogs/assets/js/38.760720ae.js"><link rel="prefetch" href="/blogs/assets/js/39.1875ffc2.js"><link rel="prefetch" href="/blogs/assets/js/4.45217f3a.js"><link rel="prefetch" href="/blogs/assets/js/40.7a14861a.js"><link rel="prefetch" href="/blogs/assets/js/41.ed1b7af6.js"><link rel="prefetch" href="/blogs/assets/js/42.c4f6260b.js"><link rel="prefetch" href="/blogs/assets/js/43.9bade764.js"><link rel="prefetch" href="/blogs/assets/js/44.5d90826a.js"><link rel="prefetch" href="/blogs/assets/js/45.338d6743.js"><link rel="prefetch" href="/blogs/assets/js/46.be63507c.js"><link rel="prefetch" href="/blogs/assets/js/47.0797771f.js"><link rel="prefetch" href="/blogs/assets/js/48.f6d41050.js"><link rel="prefetch" href="/blogs/assets/js/49.36b7a104.js"><link rel="prefetch" href="/blogs/assets/js/5.01b70f81.js"><link rel="prefetch" href="/blogs/assets/js/50.d2b34894.js"><link rel="prefetch" href="/blogs/assets/js/51.95e5bf0f.js"><link rel="prefetch" href="/blogs/assets/js/52.88bcc56d.js"><link rel="prefetch" href="/blogs/assets/js/53.d277f473.js"><link rel="prefetch" href="/blogs/assets/js/54.86e4d263.js"><link rel="prefetch" href="/blogs/assets/js/55.c0e1ad03.js"><link rel="prefetch" href="/blogs/assets/js/56.ba02f3f6.js"><link rel="prefetch" href="/blogs/assets/js/57.8103d658.js"><link rel="prefetch" href="/blogs/assets/js/58.5491be62.js"><link rel="prefetch" href="/blogs/assets/js/59.9cd38a41.js"><link rel="prefetch" href="/blogs/assets/js/6.58b1f912.js"><link rel="prefetch" href="/blogs/assets/js/60.7bb246ec.js"><link rel="prefetch" href="/blogs/assets/js/61.588b5217.js"><link rel="prefetch" href="/blogs/assets/js/62.ca53661f.js"><link rel="prefetch" href="/blogs/assets/js/64.75fa170d.js"><link rel="prefetch" href="/blogs/assets/js/65.abf2398e.js"><link rel="prefetch" href="/blogs/assets/js/66.4454150d.js"><link rel="prefetch" href="/blogs/assets/js/67.0cd2410f.js"><link rel="prefetch" href="/blogs/assets/js/68.99408bc2.js"><link rel="prefetch" href="/blogs/assets/js/69.752a0134.js"><link rel="prefetch" href="/blogs/assets/js/70.26169f93.js"><link rel="prefetch" href="/blogs/assets/js/71.fef48720.js"><link rel="prefetch" href="/blogs/assets/js/72.ad78166c.js"><link rel="prefetch" href="/blogs/assets/js/73.19c6a0f7.js"><link rel="prefetch" href="/blogs/assets/js/74.6d13c513.js"><link rel="prefetch" href="/blogs/assets/js/75.e57e3b0c.js"><link rel="prefetch" href="/blogs/assets/js/76.af2fb728.js"><link rel="prefetch" href="/blogs/assets/js/77.793f0eca.js"><link rel="prefetch" href="/blogs/assets/js/78.ca657f05.js"><link rel="prefetch" href="/blogs/assets/js/79.1cac1c5c.js"><link rel="prefetch" href="/blogs/assets/js/8.32a35b51.js"><link rel="prefetch" href="/blogs/assets/js/80.432dd9a6.js"><link rel="prefetch" href="/blogs/assets/js/81.5c0a5a7a.js"><link rel="prefetch" href="/blogs/assets/js/82.fc8ec24a.js"><link rel="prefetch" href="/blogs/assets/js/83.9fb31eed.js"><link rel="prefetch" href="/blogs/assets/js/84.4f323088.js"><link rel="prefetch" href="/blogs/assets/js/85.a654967a.js"><link rel="prefetch" href="/blogs/assets/js/86.ee501553.js"><link rel="prefetch" href="/blogs/assets/js/87.82f308c6.js"><link rel="prefetch" href="/blogs/assets/js/88.4e694037.js"><link rel="prefetch" href="/blogs/assets/js/89.1c478c56.js"><link rel="prefetch" href="/blogs/assets/js/9.1dd684b7.js"><link rel="prefetch" href="/blogs/assets/js/90.d1c1ed66.js"><link rel="prefetch" href="/blogs/assets/js/91.0a4b5c63.js"><link rel="prefetch" href="/blogs/assets/js/92.70f158ef.js"><link rel="prefetch" href="/blogs/assets/js/93.a6d5c837.js"><link rel="prefetch" href="/blogs/assets/js/94.9a7603d1.js"><link rel="prefetch" href="/blogs/assets/js/95.90623672.js"><link rel="prefetch" href="/blogs/assets/js/96.60031372.js"><link rel="prefetch" href="/blogs/assets/js/97.f54bbc58.js"><link rel="prefetch" href="/blogs/assets/js/98.c0b629f4.js"><link rel="prefetch" href="/blogs/assets/js/99.fcf0a3eb.js"><link rel="prefetch" href="/blogs/assets/js/vendors~docsearch.8e1bb93f.js">
+    <link rel="stylesheet" href="/blogs/assets/css/0.styles.5cdc9847.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>南思blog</h3> <p class="description" data-v-59e6cb88></p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>南思</span>
+          
+        <!---->
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blogs/" class="home-link router-link-active"><img src="/blogs/wallhaven-q2gz5d.jpg" alt="南思blog" class="logo"> <span class="site-name">南思blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      书签
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      南思的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4226967065603543" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/a965386816" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/blogs/wallhaven-q2gz5d.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    南思
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>71</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>16</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/blogs/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      书签
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blogs/categories/前端/" class="nav-link"><i class="undefined"></i>
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/blogs/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li></ul></div></div><div class="nav-item"><a href="/blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      南思的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4226967065603543" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/a965386816" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>Git命令大全 🔥</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>南思</span>
+          
+        <!---->
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">Git命令大全 🔥</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>南思</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2024/4/15</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>git</span><span class="tag-item" data-v-8a445198>学习笔记</span></i></div></div> <div class="theme-reco-content content__default"><p>git config
+配置 Git 的相关参数。
+Git 一共有3个配置文件：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">1.</span> 仓库级的配置文件：在仓库的 <span class="token punctuation">.</span>git<span class="token operator">/</span><span class="token punctuation">.</span>gitconfig，该配置文件只对所在的仓库有效。
+<span class="token number">2.</span> 全局配置文件：Mac 系统在 <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>gitconfig，Windows 系统在 <span class="token constant">C</span><span class="token operator">:</span>\Users\<span class="token operator">&lt;</span>用户名<span class="token operator">&gt;</span>\<span class="token punctuation">.</span>gitconfig。
+<span class="token number">3.</span> 系统级的配置文件：在 Git 的安装目录下（Mac 系统下安装目录在 <span class="token operator">/</span>usr<span class="token operator">/</span>local<span class="token operator">/</span>git）的 etc 文件夹中的 gitconfig。
+
+# 查看配置信息
+# <span class="token operator">--</span>local：仓库级，<span class="token operator">--</span>global：全局级，<span class="token operator">--</span>system：系统级
+$ git config <span class="token operator">&lt;</span><span class="token operator">--</span>local <span class="token operator">|</span> <span class="token operator">--</span>global <span class="token operator">|</span> <span class="token operator">--</span>system<span class="token operator">&gt;</span> <span class="token operator">-</span>l
+
+# 查看当前生效的配置信息
+$ git config <span class="token operator">-</span>l
+
+# 编辑配置文件
+# <span class="token operator">--</span>local：仓库级，<span class="token operator">--</span>global：全局级，<span class="token operator">--</span>system：系统级
+$ git config <span class="token operator">&lt;</span><span class="token operator">--</span>local <span class="token operator">|</span> <span class="token operator">--</span>global <span class="token operator">|</span> <span class="token operator">--</span>system<span class="token operator">&gt;</span> <span class="token operator">-</span>e
+
+# 添加配置项
+# <span class="token operator">--</span>local：仓库级，<span class="token operator">--</span>global：全局级，<span class="token operator">--</span>system：系统级
+$ git config <span class="token operator">&lt;</span><span class="token operator">--</span>local <span class="token operator">|</span> <span class="token operator">--</span>global <span class="token operator">|</span> <span class="token operator">--</span>system<span class="token operator">&gt;</span> <span class="token operator">--</span>add <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>value<span class="token operator">&gt;</span>
+
+# 获取配置项
+$ git config <span class="token operator">&lt;</span><span class="token operator">--</span>local <span class="token operator">|</span> <span class="token operator">--</span>global <span class="token operator">|</span> <span class="token operator">--</span>system<span class="token operator">&gt;</span> <span class="token operator">--</span>get <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span>
+
+# 删除配置项
+$ git config <span class="token operator">&lt;</span><span class="token operator">--</span>local <span class="token operator">|</span> <span class="token operator">--</span>global <span class="token operator">|</span> <span class="token operator">--</span>system<span class="token operator">&gt;</span> <span class="token operator">--</span>unset <span class="token operator">&lt;</span>name<span class="token operator">&gt;</span>
+
+# 配置提交记录中的用户信息
+$ git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token operator">&lt;</span>用户名<span class="token operator">&gt;</span>
+$ git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token operator">&lt;</span>邮箱地址<span class="token operator">&gt;</span>
+
+# 更改Git缓存区的大小
+# 如果提交的内容较大，默认缓存较小，提交会失败
+# 缓存大小单位：<span class="token constant">B</span>，例如：<span class="token number">524288000</span>（500MB）
+$ git config <span class="token operator">--</span>global http<span class="token punctuation">.</span>postBuffer <span class="token operator">&lt;</span>缓存大小<span class="token operator">&gt;</span>
+
+# 调用 git status<span class="token operator">/</span>git diff 命令时以高亮或彩色方式显示改动状态
+$ git config <span class="token operator">--</span>global color<span class="token punctuation">.</span>ui <span class="token boolean">true</span>
+
+# 配置可以缓存密码，默认缓存时间<span class="token number">15</span>分钟
+$ git config <span class="token operator">--</span>global credential<span class="token punctuation">.</span>helper cache
+
+# 配置密码的缓存时间
+# 缓存时间单位：秒
+$ git config <span class="token operator">--</span>global credential<span class="token punctuation">.</span>helper <span class="token string">'cache --timeout=&lt;缓存时间&gt;'</span>
+
+# 配置长期存储密码
+$ git config <span class="token operator">--</span>global credential<span class="token punctuation">.</span>helper store
+
+
+
+git clone
+从远程仓库克隆一个版本库到本地。
+
+# 默认在当前目录下创建和版本库名相同的文件夹并下载版本到该文件夹下
+$ git clone <span class="token operator">&lt;</span>远程仓库的网址<span class="token operator">&gt;</span>
+
+# 指定本地仓库的目录
+$ git clone <span class="token operator">&lt;</span>远程仓库的网址<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>本地目录<span class="token operator">&gt;</span>
+
+# <span class="token operator">-</span>b 指定要克隆的分支，默认是master分支
+$ git clone <span class="token operator">&lt;</span>远程仓库的网址<span class="token operator">&gt;</span> <span class="token operator">-</span>b <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>本地目录<span class="token operator">&gt;</span>
+
+
+
+git init
+初始化项目所在目录，初始化后会在当前目录下出现一个名为 <span class="token punctuation">.</span>git 的目录。
+
+# 初始化本地仓库，在当前目录下生成 <span class="token punctuation">.</span>git 文件夹
+$ git init
+
+
+
+git status
+查看本地仓库的状态。
+
+# 查看本地仓库的状态
+$ git status
+
+# 以简短模式查看本地仓库的状态
+# 会显示两列，第一列是文件的状态，第二列是对应的文件
+# 文件状态：<span class="token constant">A</span> 新增，<span class="token constant">M</span> 修改，<span class="token constant">D</span> 删除，<span class="token operator">??</span> 未添加到Git中
+$ git status <span class="token operator">-</span>s
+
+
+
+git remote
+操作远程库。
+
+# 列出已经存在的远程仓库
+$ git remote
+
+# 列出远程仓库的详细信息，在别名后面列出<span class="token constant">URL</span>地址
+$ git remote <span class="token operator">-</span>v
+$ git remote <span class="token operator">--</span>verbose
+
+# 添加远程仓库
+$ git remote add <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>远程仓库的<span class="token constant">URL</span>地址<span class="token operator">&gt;</span>
+
+# 修改远程仓库的别名
+$ git remote rename <span class="token operator">&lt;</span>原远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>新的别名<span class="token operator">&gt;</span>
+
+# 删除指定名称的远程仓库
+$ git remote remove <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span>
+
+# 修改远程仓库的 <span class="token constant">URL</span> 地址
+$ git remote set<span class="token operator">-</span>url <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>新的远程仓库<span class="token constant">URL</span>地址<span class="token operator">&gt;</span>
+
+
+
+git branch
+操作 Git 的分支命令。
+
+# 列出本地的所有分支，当前所在分支以 <span class="token string">&quot;*&quot;</span> 标出
+$ git branch
+
+# 列出本地的所有分支并显示最后一次提交，当前所在分支以 <span class="token string">&quot;*&quot;</span> 标出
+$ git branch <span class="token operator">-</span>v
+
+# 创建新分支，新的分支基于上一次提交建立
+$ git branch <span class="token operator">&lt;</span>分支名<span class="token operator">&gt;</span>
+
+# 修改分支名称
+# 如果不指定原分支名称则为当前所在分支
+$ git branch <span class="token operator">-</span>m <span class="token punctuation">[</span><span class="token operator">&lt;</span>原分支名称<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>新的分支名称<span class="token operator">&gt;</span>
+# 强制修改分支名称
+$ git branch <span class="token operator">-</span><span class="token constant">M</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>原分支名称<span class="token operator">&gt;</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span>新的分支名称<span class="token operator">&gt;</span>
+
+# 删除指定的本地分支
+$ git branch <span class="token operator">-</span>d <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+# 强制删除指定的本地分支
+$ git branch <span class="token operator">-</span><span class="token constant">D</span> <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+
+
+git checkout
+检出命令，用于创建、切换分支等。
+
+# 切换到已存在的指定分支
+$ git checkout <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+# 创建并切换到指定的分支，保留所有的提交记录
+# 等同于 <span class="token string">&quot;git branch&quot;</span> 和 <span class="token string">&quot;git checkout&quot;</span> 两个命令合并
+$ git checkout <span class="token operator">-</span>b <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+# 创建并切换到指定的分支，删除所有的提交记录
+$ git checkout <span class="token operator">--</span>orphan <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+# 替换掉本地的改动，新增的文件和已经添加到暂存区的内容不受影响
+$ git checkout <span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span>
+
+
+
+git cherry<span class="token operator">-</span>pick
+把已经提交的记录合并到当前分支。
+
+# 把已经提交的记录合并到当前分支
+$ git cherry<span class="token operator">-</span>pick <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+
+
+git add
+把要提交的文件的信息添加到暂存区中。当使用 git commit 时，将依据暂存区中的内容来进行文件的提交。
+
+# 把指定的文件添加到暂存区中
+$ git add <span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span>
+
+# 添加所有修改、已删除的文件到暂存区中
+$ git add <span class="token operator">-</span>u <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+$ git add <span class="token operator">--</span>update <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+# 添加所有修改、已删除、新增的文件到暂存区中，省略 <span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span> 即为当前目录
+$ git add <span class="token operator">-</span><span class="token constant">A</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+$ git add <span class="token operator">--</span>all <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+# 查看所有修改、已删除但没有提交的文件，进入一个子命令系统
+$ git add <span class="token operator">-</span>i <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+$ git add <span class="token operator">--</span>interactive <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+
+
+git commit
+将暂存区中的文件提交到本地仓库中。
+
+# 把暂存区中的文件提交到本地仓库，调用文本编辑器输入该次提交的描述信息
+$ git commit
+
+# 把暂存区中的文件提交到本地仓库中并添加描述信息
+$ git commit <span class="token operator">-</span>m <span class="token string">&quot;&lt;提交的描述信息&gt;&quot;</span>
+
+# 把所有修改、已删除的文件提交到本地仓库中
+# 不包括未被版本库跟踪的文件，等同于先调用了 <span class="token string">&quot;git add -u&quot;</span>
+$ git commit <span class="token operator">-</span>a <span class="token operator">-</span>m <span class="token string">&quot;&lt;提交的描述信息&gt;&quot;</span>
+
+# 修改上次提交的描述信息
+$ git commit <span class="token operator">--</span>amend
+
+
+
+git fetch
+从远程仓库获取最新的版本到本地的 tmp 分支上。
+
+# 将远程仓库所有分支的最新版本全部取回到本地
+$ git fetch <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span>
+
+# 将远程仓库指定分支的最新版本取回到本地
+$ git fetch <span class="token operator">&lt;</span>远程主机名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>分支名<span class="token operator">&gt;</span>
+
+
+
+git merge
+合并分支。
+
+# 把指定的分支合并到当前所在的分支下
+$ git merge <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+
+
+git diff
+比较版本之间的差异。
+
+# 比较当前文件和暂存区中文件的差异，显示没有暂存起来的更改
+$ git diff
+
+# 比较暂存区中的文件和上次提交时的差异
+$ git diff <span class="token operator">--</span>cached
+$ git diff <span class="token operator">--</span>staged
+
+# 比较当前文件和上次提交时的差异
+$ git diff <span class="token constant">HEAD</span>
+
+# 查看从指定的版本之后改动的内容
+$ git diff <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+# 比较两个分支之间的差异
+$ git diff <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+# 查看两个分支分开后各自的改动内容
+$ git diff <span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span><span class="token operator">...</span><span class="token operator">&lt;</span>分支名称<span class="token operator">&gt;</span>
+
+
+
+git pull
+从远程仓库获取最新版本并合并到本地。
+首先会执行 git fetch，然后执行 git merge，把获取的分支的 <span class="token constant">HEAD</span> 合并到当前分支。
+
+# 从远程仓库获取最新版本。
+$ git pull
+
+
+
+git push
+把本地仓库的提交推送到远程仓库。
+
+# 把本地仓库的分支推送到远程仓库的指定分支
+$ git push <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>本地分支名<span class="token operator">&gt;</span><span class="token operator">:</span><span class="token operator">&lt;</span>远程分支名<span class="token operator">&gt;</span>
+
+# 删除指定的远程仓库的分支
+$ git push <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">:</span><span class="token operator">&lt;</span>远程分支名<span class="token operator">&gt;</span>
+$ git push <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">--</span><span class="token keyword">delete</span> <span class="token operator">&lt;</span>远程分支名<span class="token operator">&gt;</span>
+
+
+
+git log
+显示提交的记录。
+
+# 打印所有的提交记录
+$ git log
+
+# 打印从第一次提交到指定的提交的记录
+$ git log <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+# 打印指定数量的最新提交的记录
+$ git log <span class="token operator">-</span><span class="token operator">&lt;</span>指定的数量<span class="token operator">&gt;</span>
+
+
+
+git reset
+还原提交记录。
+
+# 重置暂存区，但文件不受影响
+# 相当于将用 <span class="token string">&quot;git add&quot;</span> 命令更新到暂存区的内容撤出暂存区，可以指定文件
+# 没有指定 commit <span class="token constant">ID</span> 则默认为当前 <span class="token constant">HEAD</span>
+$ git reset <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+$ git reset <span class="token operator">--</span>mixed <span class="token punctuation">[</span><span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+# 将 <span class="token constant">HEAD</span> 的指向改变，撤销到指定的提交记录，文件未修改
+$ git reset <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+$ git reset <span class="token operator">--</span>mixed <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+# 将 <span class="token constant">HEAD</span> 的指向改变，撤销到指定的提交记录，文件未修改
+# 相当于调用 <span class="token string">&quot;git reset --mixed&quot;</span> 命令后又做了一次 <span class="token string">&quot;git add&quot;</span>
+$ git reset <span class="token operator">--</span>soft <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+# 将 <span class="token constant">HEAD</span> 的指向改变，撤销到指定的提交记录，文件也修改了
+$ git reset <span class="token operator">--</span>hard <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+
+
+git revert
+生成一个新的提交来撤销某次提交，此次提交之前的所有提交都会被保留。
+
+# 生成一个新的提交来撤销某次提交
+$ git revert <span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span>
+
+
+
+git tag
+操作标签的命令。
+
+# 打印所有的标签
+$ git tag
+
+# 添加轻量标签，指向提交对象的引用，可以指定之前的提交记录
+$ git tag <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+# 添加带有描述信息的附注标签，可以指定之前的提交记录
+$ git tag <span class="token operator">-</span>a <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span> <span class="token operator">-</span>m <span class="token operator">&lt;</span>标签描述信息<span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token operator">&lt;</span>commit <span class="token constant">ID</span><span class="token operator">&gt;</span><span class="token punctuation">]</span>
+
+# 切换到指定的标签
+$ git checkout <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span>
+
+# 查看标签的信息
+$ git show <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span>
+
+# 删除指定的标签
+$ git tag <span class="token operator">-</span>d <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span>
+
+# 将指定的标签提交到远程仓库
+$ git push <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>标签名称<span class="token operator">&gt;</span>
+
+# 将本地所有的标签全部提交到远程仓库
+$ git push <span class="token operator">&lt;</span>远程仓库的别名<span class="token operator">&gt;</span> –tags
+
+
+
+git mv
+重命名文件或者文件夹。
+
+# 重命名指定的文件或者文件夹
+$ git mv <span class="token operator">&lt;</span>源文件<span class="token operator">/</span>文件夹<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>目标文件<span class="token operator">/</span>文件夹<span class="token operator">&gt;</span>
+
+
+
+git rm
+删除文件或者文件夹。
+
+# 移除跟踪指定的文件，并从本地仓库的文件夹中删除
+$ git rm <span class="token operator">&lt;</span>文件路径<span class="token operator">&gt;</span>
+
+# 移除跟踪指定的文件夹，并从本地仓库的文件夹中删除
+$ git rm <span class="token operator">-</span>r <span class="token operator">&lt;</span>文件夹路径<span class="token operator">&gt;</span>
+
+# 移除跟踪指定的文件，在本地仓库的文件夹中保留该文件
+$ git rm <span class="token operator">--</span>cached
+
+
+
+Git操作场景示例
+<span class="token number">1.</span> 删除掉本地不存在的远程分支
+多人合作开发时，如果远程的分支被其他开发删除掉，在本地执行 git branch <span class="token operator">--</span>all 依然会显示该远程分支，可使用下列的命令进行删除：
+
+# 使用 pull 命令，添加 <span class="token operator">-</span>p 参数
+$ git pull <span class="token operator">-</span>p
+
+# 等同于下面的命令
+$ git fetch <span class="token operator">-</span>p
+$ git fetch <span class="token operator">--</span>prune origin
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:-1;" data-v-248d85d6></canvas></div><!----><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 南思blog
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/blogs/assets/js/app.1262c1df.js" defer></script><script src="/blogs/assets/js/7.06f4551e.js" defer></script><script src="/blogs/assets/js/2.25e16450.js" defer></script><script src="/blogs/assets/js/1.b934b37f.js" defer></script><script src="/blogs/assets/js/63.75408502.js" defer></script>
+  </body>
+</html>
